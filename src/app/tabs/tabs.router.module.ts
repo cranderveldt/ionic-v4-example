@@ -29,8 +29,8 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'nested',
-    redirectTo: '/tabs/(home:home)',
+    path: 'tabs',
+    redirectTo: '/tabs',
     pathMatch: 'full'
   }
 ];
