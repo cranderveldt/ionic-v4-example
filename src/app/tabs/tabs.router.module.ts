@@ -8,7 +8,8 @@ import { ContactPage } from '../contact/contact.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '', // this resolves to the tabs root
+    // path: 'tabs', // this resolves to the HomePage child component, but with no tabs
     component: TabsPage,
     children: [
       {
