@@ -8,7 +8,7 @@ import { ContactPage } from '../contact/contact.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
@@ -28,11 +28,11 @@ const routes: Routes = [
       }
     ]
   },
-  {
-    path: 'tabs',
-    redirectTo: '/tabs',
-    pathMatch: 'full'
-  }
+  // {
+  //   path: 'tabs/:tid',
+  //   redirectTo: '/tabs/:tid/(home:home)',
+  //   pathMatch: 'full'
+  // }
 ];
 
 @NgModule({
