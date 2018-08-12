@@ -19,7 +19,7 @@ import { HomePageModule } from '../home/home.module';
     TabsPageRoutingModule,
     HomePageModule,
     AboutPageModule,
-    ContactPageModule
+    ContactPageModule,
   ],
   declarations: [TabsPage]
 })

@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'links', pathMatch: 'full' },
   { path: 'links', loadChildren: './links/links.module#LinksPageModule' },
-  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'tabs/:pid', loadChildren: './tabs/tabs.module#TabsPageModule' },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

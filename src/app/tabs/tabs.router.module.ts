@@ -8,8 +8,7 @@ import { ContactPage } from '../contact/contact.page';
 
 const routes: Routes = [
   {
-    path: '', // this resolves to the tabs root
-    // path: 'tabs', // this resolves to the HomePage child component, but with no tabs
+    path: 'nested',
     component: TabsPage,
     children: [
       {
@@ -30,8 +29,8 @@ const routes: Routes = [
     ]
   },
   // {
-  //   path: 'tabs/:tid',
-  //   redirectTo: '/tabs/:tid/(home:home)',
+  //   path: 'tabs/:pid',
+  //   redirectTo: `/tabs/:pid/nested/(about:about)`,
   //   pathMatch: 'full'
   // }
 ];
@@ -40,4 +39,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
+
 export class TabsPageRoutingModule {}

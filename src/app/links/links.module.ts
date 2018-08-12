@@ -10,7 +10,7 @@ import { LinksPage } from './links.page';
 const routes: Routes = [
   {
     path: '',
-    component: LinksPage
+    component: LinksPage,
   }
 ];
 
