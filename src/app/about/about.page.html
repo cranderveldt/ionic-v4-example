@@ -4,6 +4,40 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  This is our about page.
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">This is a label for a text field</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">This is a floating label for a select</ion-label>
+      <ion-select>
+        <ion-select-option [value]="1">One</ion-select-option>
+        <ion-select-option [value]="2">Two</ion-select-option>
+        <ion-select-option [value]="3">Three</ion-select-option>
+        <ion-select-option [value]="4">Four</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">This is a stacked label for a select</ion-label>
+      <ion-select>
+        <ion-select-option [value]="1">One</ion-select-option>
+        <ion-select-option [value]="2">Two</ion-select-option>
+        <ion-select-option [value]="3">Three</ion-select-option>
+        <ion-select-option [value]="4">Four</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>This is a fixed label for a select</ion-label>
+      <ion-select>
+        <ion-select-option [value]="1">One</ion-select-option>
+        <ion-select-option [value]="2">Two</ion-select-option>
+        <ion-select-option [value]="3">Three</ion-select-option>
+        <ion-select-option [value]="4">Four</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
 </ion-content>
